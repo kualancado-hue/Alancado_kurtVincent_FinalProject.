@@ -1,58 +1,29 @@
-Transaction Tracker CLI
-A lightweight, Python-based Command Line Interface (CLI) for managing and auditing personal financial transactions. Built with Python dataclasses for speed and reliability.
+/Alancado_KurtVincent_FinalProject
+│
+├── Main.py                 <-- (The code I documented for you earlier)
+└── README.md               <-- (The documentation below)
 
-Description
-The Transaction Tracker CLI helps you log daily expenses and income without leaving your terminal. It stores data locally and provides quick summaries of your spending habits by category. This project was designed to demonstrate clean Python architecture and efficient data handling.
+# Personal Budget Tracker CLI
 
-Features
-Easy Logging: Quickly add transactions with category and description.
+A robust Python command-line application for tracking income and expenses, providing categorical analysis and persistent data storage.
 
-Smart Defaults: Automatically handles timestamps if a date isn't provided.
+## 📺 Video Demonstration
+Click here to watch the Project Walkthrough on YouTube https://youtu.be/3Zr-mgqm4o8
 
-Categorization: Group your spending (e.g., Food, Rent, Utilities).
+## ✨ Features
+- **Persistent Storage:** Automatically saves and loads data from a JSON file.
+- **Categorical Summary:** Breaks down expenses by category with percentage calculations.
+- **Advanced Search:** Search through transaction history by keyword.
+- **Formatted CLI:** Clean, table-based terminal output using f-string alignment.
+- **Robust Error Handling:** Prevents crashes from invalid numeric inputs.
 
-Lightweight: Zero heavy database dependencies; uses local storage.
+python main.py
 
-Data Integrity: Uses Python Type Hinting to ensure data accuracy.
+Sample Usage
+Select 1 to add your monthly allowance.
+<img width="301" height="317" alt="monthly" src="https://github.com/user-attachments/assets/f7d212f7-9b40-4525-b7c1-7913318d6e70" />
+Select 2 to add a "Food" expense.
+<img width="303" height="382" alt="FOOD" src="https://github.com/user-attachments/assets/2c55b4bd-5698-436f-8a40-319eb7a5e7da" />
+Select 6 to see your budget summary.
+<img width="301" height="317" alt="monthly" src="https://github.com/user-attachments/assets/29732993-a674-4553-a44a-3e9425d4dec5" />
 
-Installation & Setup
-Prerequisites
-Python 3.8 or higher
-
-git (optional, for cloning)
-
-Steps
-Clone the repository:
-
-Bash
-git clone https://github.com/[USER_NAME]/[REPO_NAME].git
-cd [REPO_NAME]
-Create a Virtual Environment (Recommended):
-
-Bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-Install dependencies:
-(Note: Since this uses standard libraries, this step might be empty, or you can add pip install -r requirements.txt if you add extra tools later.)
-
-Sample CLI Usage
-Once the script is set up, you can interact with it directly from your terminal.
-
-Adding a Transaction
-To log a new expense, run the add command:
-
-Bash
-python tracker.py add --amount 15.50 --category "Food" --description "Lunch at Cafe"
-Viewing Transactions
-To see a formatted list of all your logs:
-
-Bash
-python tracker.py list
-Screenshot
-(Tip: Replace the link above with a real screenshot from your terminal! You can upload the image to your GitHub repo and link it like this: ![](./docs/screenshot.png))
-
-Contributing
-Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
-
-License
-Distributed under the MIT License. See LICENSE for more information.
